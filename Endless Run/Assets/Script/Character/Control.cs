@@ -30,6 +30,7 @@ public class Control : MonoBehaviour
         {
             GameManager.instance.condition = false;
             animator.SetTrigger("Death");
+            UIManager.instance.UIActive();
         }
     }
 }

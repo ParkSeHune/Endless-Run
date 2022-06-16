@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Obstacle\ObstacleCreate.cs" />
     <Compile Include="Assets\Script\Road\CreateRoad.cs" />
+    <Compile Include="Assets\Script\Manager\UIManager.cs" />
     <Compile Include="Assets\Script\Obstacle\Obstacle.cs" />
     <Compile Include="Assets\Script\Road\MoveRoad.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
@@ -73,6 +74,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\8K Skybox Pack Free\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\Unity UI Samples\Textures and Sprites\SF UI\Background\LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />

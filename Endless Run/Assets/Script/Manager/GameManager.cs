@@ -25,4 +25,9 @@ public class GameManager : MonoBehaviour
             Destroy(instance);
         }
     }
+
+    private void Start()
+    {
+        condition = true;
+    }
 }

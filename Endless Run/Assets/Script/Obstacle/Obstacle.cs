@@ -5,7 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public Animator animator;
-    public float speed = 5.0f; 
+    public float speed = 5.0f;
 
     void Update()
     {
@@ -18,7 +18,6 @@ public class Obstacle : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Ãæµ¹");
             animator.enabled = true;
         }
     }

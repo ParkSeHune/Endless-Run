@@ -354,6 +354,7 @@
 "Assets/Script/Manager/ObjectPooling.cs"
 "Assets/Script/Manager/SceneMove.cs"
 "Assets/Script/Manager/SkyRotation.cs"
+"Assets/Script/Manager/UIManager.cs"
 "Assets/Script/Obstacle/Obstacle.cs"
 "Assets/Script/Obstacle/ObstacleCreate.cs"
 "Assets/Script/Road/CreateRoad.cs"
