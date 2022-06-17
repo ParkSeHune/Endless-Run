@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Obstacle\ObstacleCreate.cs" />
     <Compile Include="Assets\Script\Road\CreateRoad.cs" />
+    <Compile Include="Assets\Script\Obstacle\ObstacleRandom.cs" />
     <Compile Include="Assets\Script\Manager\UIManager.cs" />
     <Compile Include="Assets\Script\Obstacle\Obstacle.cs" />
     <Compile Include="Assets\Script\Road\MoveRoad.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Assets\Script\Manager\ObjectPooling.cs" />
     <Compile Include="Assets\Script\Manager\SceneMove.cs" />
     <Compile Include="Assets\Script\Manager\SkyRotation.cs" />
+    <Compile Include="Assets\Script\Manager\SoundManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

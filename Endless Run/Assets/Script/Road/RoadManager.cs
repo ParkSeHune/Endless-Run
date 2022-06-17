@@ -7,8 +7,6 @@ public class RoadManager : MonoBehaviour
     //생성할 게임 오브젝트
     public GameObject road;
 
-    public float speed = 1.0f;
-
     List<GameObject> roadList;
 
     //위치값 설정
@@ -38,7 +36,7 @@ public class RoadManager : MonoBehaviour
     {
         for (int i = 0; i < roadList.Count; i++)
         {
-            roadList[i].transform.Translate(-Vector3.forward * speed * Time.deltaTime);
+            roadList[i].transform.Translate(Vector3.back * GameManager.instance.speed * Time.deltaTime);
         }
 
         if (roadList[lastRoad].transform.position.z <= -36)

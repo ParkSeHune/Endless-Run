@@ -6,8 +6,6 @@ public class CreateRoad : MonoBehaviour
 {
     public GameObject Road;
 
-
-
     void Start()
     {
         for (int i = 0; i < 5; i++)

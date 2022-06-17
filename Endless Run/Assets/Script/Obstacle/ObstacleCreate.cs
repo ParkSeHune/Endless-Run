@@ -10,6 +10,8 @@ public class ObstacleCreate : MonoBehaviour
     {
         if (other.name == "Character")
         {
+            SoundManager.instance.SoundCall("LevelDesign");
+            GameManager.instance.speed++;
             ObjectPooling.objectPool.GetQueue();
         }
     }

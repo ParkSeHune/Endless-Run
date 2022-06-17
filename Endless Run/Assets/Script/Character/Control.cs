@@ -13,12 +13,14 @@ public class Control : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) && count > -2)
         {
+            SoundManager.instance.SoundCall("Move");
             count--;
             transform.position += Vector3.left;
         }
 
         if (Input.GetKeyDown(KeyCode.RightArrow) && count < 2)
         {
+            SoundManager.instance.SoundCall("Move");
             count++;
             transform.position += Vector3.right;
         }
@@ -28,6 +30,7 @@ public class Control : MonoBehaviour
     {
         if (collision.gameObject.tag == "Tire Stack")
         {
+            SoundManager.instance.SoundCall("Collision");
             GameManager.instance.condition = false;
             animator.SetTrigger("Death");
             UIManager.instance.UIActive();

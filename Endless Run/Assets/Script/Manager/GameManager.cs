@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     //이 게임 내에서 GameManager instance 이 instance에 담신 오브젝트만 존재할 수 있다
     public static GameManager instance;
 
+    public float speed = 10.0f;
     public bool condition = true;
 
     private void Awake()
