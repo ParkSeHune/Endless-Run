@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance;
     
     public AudioSource audioSource;
-    public AudioClip[] audioClip;
+    public AudioClip [] audioClip;
 
     private void Start()
     {
@@ -22,16 +22,12 @@ public class SoundManager : MonoBehaviour
                 audioSource.clip = audioClip[0];
                 audioSource.Play();
                 break;
-            case "Click":
+            case "LevelDesign":
                 audioSource.clip = audioClip[1];
                 audioSource.Play();
                 break;
-            case "LevelDesign":
-                audioSource.clip = audioClip[2];
-                audioSource.Play();
-                break;
             case "Move":
-                audioSource.clip = audioClip[3];
+                audioSource.clip = audioClip[2];
                 audioSource.Play();
                 break;
         }

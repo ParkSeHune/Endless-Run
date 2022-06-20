@@ -8,7 +8,7 @@ public class CreateRoad : MonoBehaviour
 
     void Start()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 6; i++)
         {
             Instantiate(Road, new Vector3(0, 0, i * 6), Quaternion.identity);
         }

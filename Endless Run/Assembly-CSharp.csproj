@@ -62,13 +62,14 @@
     <Compile Include="Assets\Script\Manager\UIManager.cs" />
     <Compile Include="Assets\Script\Obstacle\Obstacle.cs" />
     <Compile Include="Assets\Script\Road\MoveRoad.cs" />
+    <Compile Include="Assets\Script\Manager\SoundManager.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\Character\Control.cs" />
     <Compile Include="Assets\Script\Road\RoadManager.cs" />
     <Compile Include="Assets\Script\Manager\ObjectPooling.cs" />
     <Compile Include="Assets\Script\Manager\SceneMove.cs" />
+    <Compile Include="Assets\Script\Manager\DataManager.cs" />
     <Compile Include="Assets\Script\Manager\SkyRotation.cs" />
-    <Compile Include="Assets\Script\Manager\SoundManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -89,6 +90,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Low Poly Buildings Lite\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

@@ -350,6 +350,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/Character/Control.cs"
+"Assets/Script/Manager/DataManager.cs"
 "Assets/Script/Manager/GameManager.cs"
 "Assets/Script/Manager/ObjectPooling.cs"
 "Assets/Script/Manager/SceneMove.cs"

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public float speed = 10.0f;
+    public int crashCount = 1;
     public bool condition = true;
 
     private void Awake()
