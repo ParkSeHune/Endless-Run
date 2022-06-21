@@ -17,6 +17,11 @@ public class ObstacleCreate : MonoBehaviour
                 DataManager.instance.level++;
             }
 
+            if (DataManager.instance.level >= 3)
+            {
+                DataManager.instance.level = 3;
+            }
+
             GameManager.instance.speed++;
             GameManager.instance.crashCount++;
 

@@ -2,12 +2,18 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Control
+    - DataManager
+    - Exit
+    - GameManager
     - ObjectPooling
     - Obstacle
     - ObstacleCreate
+    - ObstacleRandom
     - RoadManager
     - SceneMove
     - SkyRotation
+    - SoundManager
+    - UIManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -15,6 +21,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -49,6 +56,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
@@ -66,6 +74,15 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: Exit
+    methodName: ExitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneMove
+    methodName: SceneNumber
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneMove
+    methodName: SceneNumber
   - assembly: Assembly-CSharp
     fullTypeName: SceneMove
     methodName: SceneNumber
@@ -114,18 +131,46 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 4228}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 5984}
+      Script: {instanceID: 2124}
     - Class: 114
-      Script: {instanceID: 6262}
+      Script: {instanceID: 2488}
     - Class: 114
-      Script: {instanceID: 6782}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 7332}
+      Script: {instanceID: 2868}
+    - Class: 114
+      Script: {instanceID: 3168}
+    - Class: 114
+      Script: {instanceID: 4258}
+    - Class: 114
+      Script: {instanceID: 4646}
+    - Class: 114
+      Script: {instanceID: 5274}
+    - Class: 114
+      Script: {instanceID: 5880}
+    - Class: 114
+      Script: {instanceID: 6018}
+    - Class: 114
+      Script: {instanceID: 6034}
+    - Class: 114
+      Script: {instanceID: 6296}
+    - Class: 114
+      Script: {instanceID: 6378}
+    - Class: 114
+      Script: {instanceID: 6816}
+    - Class: 114
+      Script: {instanceID: 6920}
+    - Class: 114
+      Script: {instanceID: 7020}
+    - Class: 114
+      Script: {instanceID: 7370}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 134
       Script: {instanceID: 0}
@@ -138,6 +183,18 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 205
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 850595691
       Script: {instanceID: 0}
     Assets/Scenes/Title.unity:
     - Class: 1
@@ -156,34 +213,38 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1558}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 2208}
     - Class: 114
-      Script: {instanceID: 2614}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2868}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 3168}
     - Class: 114
-      Script: {instanceID: 4206}
+      Script: {instanceID: 4236}
     - Class: 114
-      Script: {instanceID: 4476}
+      Script: {instanceID: 4506}
     - Class: 114
-      Script: {instanceID: 5240}
+      Script: {instanceID: 5040}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5274}
     - Class: 114
-      Script: {instanceID: 6344}
+      Script: {instanceID: 5880}
     - Class: 114
-      Script: {instanceID: 28750}
+      Script: {instanceID: 6034}
+    - Class: 114
+      Script: {instanceID: 6378}
+    - Class: 114
+      Script: {instanceID: 6920}
+    - Class: 114
+      Script: {instanceID: 29730}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -269,6 +330,12 @@ ScriptsOnlyBuild:
     className: CreateRoad
   - hash:
       serializedVersion: 2
+      Hash: f214d40873e4902ef60c45ab50a1f96f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObstacleRandom
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -309,6 +376,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: ac733a2481d6e45a17e6d6bb74bddb77
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -587,7 +660,7 @@ ScriptsOnlyBuild:
     className: UnityOnJointBreak2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+      Hash: 30f3213a6e218a461fa00e428f22d3eb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Obstacle
@@ -621,6 +694,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveRoad
+  - hash:
+      serializedVersion: 2
+      Hash: df5b110f22b7af245a3178f35b6dc2ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -669,6 +748,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b291181c3888ba3f65afa83bc3f477c1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -785,7 +870,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b2791e84f60a4d9ed5e50b44c14b5562
+      Hash: d035e98b6913b9dda0fa1cdf2e749fba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RoadManager
@@ -869,6 +954,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneMove
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -885,6 +976,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: 1b15ca65a1d17b66885f64271c941719
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataManager
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -1028,9 +1125,9 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SceneMove
+    className: Exit
   platform: 19
   scenePathNames:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/user/Unity/Endless Run/Endless Run.exe
+  playerPath: C:/Users/user/Desktop/Endless Run.exe
