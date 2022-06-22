@@ -9,7 +9,10 @@ public class Control : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.instance.condition == false) return;
+        if (GameManager.instance.condition == false)
+        {
+            return;
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) && count > -2)
         {

@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
 
     public GameObject popUp;
-    public bool condition;
+    public bool condition = false;
 
     private void Start()
     {
@@ -16,16 +16,19 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && condition == false)
         {
             Time.timeScale = 0;
             popUp.SetActive(true);
             condition = true;
+            GameManager.instance.condition = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Return) && condition)
+        else if (Input.GetKeyDown(KeyCode.Escape) && condition == true)
         {
             Time.timeScale = 1;
             popUp.SetActive(false);
+            condition = false;
+            GameManager.instance.condition = true;
         }
     }
 

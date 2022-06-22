@@ -34,7 +34,10 @@ public class DataManager : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.instance.condition == false) return;
+        if (GameManager.instance.condition == false)
+        {
+            return;
+        }
 
         timer += Time.deltaTime;
 

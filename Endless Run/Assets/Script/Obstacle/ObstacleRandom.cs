@@ -17,7 +17,10 @@ public class ObstacleRandom : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.instance.condition == false) return;
+        if (GameManager.instance.condition == false)
+        {
+            return;
+        }
 
         transform.Translate(Vector3.back * GameManager.instance.speed * Time.deltaTime);
     }
